@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myconatiner2
-          image: lakshmankumar12345/newimage:latest # Image that will be used to containers in the cluster
+          image: lakshmankumar12345/newimage # Image that will be used to containers in the cluster
           imagePullPolicy: Always
           ports:
             - containerPort: 8080 # The port that the container is running on in the cluster
