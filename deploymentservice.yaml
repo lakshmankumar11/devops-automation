@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myconatiner2
-          image: lakshmankumar12345/devops # Image that will be used to containers in the cluster
+          image: lakshmankumar12345/newimage:latest # Image that will be used to containers in the cluster
           imagePullPolicy: Always
           ports:
             - containerPort: 8080 # The port that the container is running on in the cluster
@@ -25,7 +25,7 @@ spec:
 apiVersion: v1 # Kubernetes API version
 kind: Service # Kubernetes resource kind we are creating
 metadata: # Metadata of the resource kind we are creating
-  name: myservice1
+  name: myservice2
 spec:
   selector:
     app: myapp1
